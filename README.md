@@ -113,7 +113,7 @@ imports like so:
 import (
   // ...
 
-  "github.com/atc0005/go-teams-notify/v2"
+  "github.com/phuc1998/go-teams-notify"
 )
 ```
 
@@ -212,7 +212,7 @@ File: [custom-validation](./examples/custom-validation/main.go)
 See the Known importers lists below for a dynamically updated list of projects
 using either this library or the original project.
 
-- [this fork](https://pkg.go.dev/github.com/atc0005/go-teams-notify/v2?tab=importedby)
+- [this fork](https://pkg.go.dev/github.com/phuc1998/go-teams-notify?tab=importedby)
 - [original project](https://pkg.go.dev/github.com/dasrick/go-teams-notify/v2?tab=importedby)
 
 ## References
@@ -233,8 +233,8 @@ using either this library or the original project.
 [githubtag-image]: https://img.shields.io/github/release/atc0005/go-teams-notify.svg?style=flat
 [githubtag-url]: https://github.com/atc0005/go-teams-notify
 
-[goref-image]: https://pkg.go.dev/badge/github.com/atc0005/go-teams-notify/v2.svg
-[goref-url]: https://pkg.go.dev/github.com/atc0005/go-teams-notify/v2
+[goref-image]: https://pkg.go.dev/badge/github.com/phuc1998/go-teams-notify.svg
+[goref-url]: https://pkg.go.dev/github.com/phuc1998/go-teams-notify
 
 [license-image]: https://img.shields.io/github/license/atc0005/go-teams-notify.svg?style=flat
 [license-url]: https://github.com/atc0005/go-teams-notify/blob/master/LICENSE

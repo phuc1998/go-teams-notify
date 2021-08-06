@@ -122,13 +122,16 @@ func DisableLogging() {
 }
 
 // NewClient - create a brand new client for MS Teams notify
-func NewClient() API {
+func NewClient(httpClient ...*http.Client) API {
 	client := teamsClient{
 		httpClient: &http.Client{
 			// We're using a context instead of setting this directly
 			// Timeout: DefaultWebhookSendTimeout,
 		},
 		skipWebhookURLValidation: false,
+	}
+	if len(httpClient) > 0 {
+		client.httpClient = httpClient[0]
 	}
 	return &client
 }

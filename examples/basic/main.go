@@ -22,7 +22,7 @@ Of note:
 package main
 
 import (
-	goteamsnotify "github.com/atc0005/go-teams-notify/v2"
+	goteamsnotify "github.com/phuc1998/go-teams-notify"
 )
 
 func main() {
