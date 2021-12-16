@@ -473,12 +473,12 @@ const (
 // or Microsoft Teams connectors.
 type MessageCard struct {
 	// Required; must be set to "MessageCard"
-	Type string `json:"@type"`
+	Type string `json:"@type,omitempty"`
 	// Required; must be set to "message"
-	TypeRaw string `json:"type"`
+	TypeRaw string `json:"type,omitempty"`
 
 	// Required; must be set to "https://schema.org/extensions"
-	Context string `json:"@context"`
+	Context string `json:"@context,omitempty"`
 
 	// Summary is required if the card does not contain a text property,
 	// otherwise optional. The summary property is typically displayed in the
@@ -512,7 +512,7 @@ type MessageCard struct {
 	// PotentialActions is a collection of actions for a MessageCard.
 	PotentialActions []*MessageCardPotentialAction `json:"potentialAction,omitempty"`
 
-	Attachments []Attachment `json:"attachments"`
+	Attachments []Attachment `json:"attachments,omitempty"`
 }
 
 // validatePotentialAction inspects the given *MessageCardPotentialAction
