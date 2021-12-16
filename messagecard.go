@@ -379,6 +379,7 @@ type AdaptiveCardContent struct {
 }
 
 type MSTeams struct {
+	Width    string          `json:"width"`
 	Entities []MSTeamsEntity `json:"entities"`
 }
 
@@ -784,6 +785,9 @@ func NewAttachment(body []AdaptiveCardBody) Attachment {
 			Version:                  "1.3",
 			VerticalContentAlignment: "Center",
 			Body:                     body,
+			MSTeams: MSTeams{
+				Width: "Full",
+			},
 		},
 	}
 	return attach
