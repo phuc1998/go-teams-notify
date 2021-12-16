@@ -474,6 +474,8 @@ const (
 type MessageCard struct {
 	// Required; must be set to "MessageCard"
 	Type string `json:"@type"`
+	// Required; must be set to "message"
+	TypeRaw string `json:"type"`
 
 	// Required; must be set to "https://schema.org/extensions"
 	Context string `json:"@context"`
@@ -766,7 +768,7 @@ func NewMessageCard() MessageCard {
 
 func NewMessageCardAttachments() MessageCard {
 	msgCard := MessageCard{
-		Type: "message",
+		TypeRaw: "message",
 	}
 
 	return msgCard
