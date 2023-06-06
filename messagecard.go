@@ -402,6 +402,7 @@ type AdaptiveCardBody struct {
 	Color   string   `json:"color,omitempty"`
 	Wrap    bool     `json:"wrap,omitempty"`
 	Columns []Column `json:"columns,omitempty"`
+	Url     string   `json:"url,omitempty"`
 }
 
 type Column struct {
@@ -450,6 +451,7 @@ const (
 	TypeActionShowCard = "Action.ShowCard"
 	TypeActionOpenUrl  = "Action.OpenUrl"
 	TypeAdaptiveCard   = "AdaptiveCard"
+	TypeImage          = "Image"
 
 	WeightBorder  = "Border"
 	WeightLighter = "Lighter"
